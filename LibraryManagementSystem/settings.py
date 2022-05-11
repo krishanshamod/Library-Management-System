@@ -35,7 +35,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'BookManager'
+    'BookManager',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -73,6 +74,7 @@ WSGI_APPLICATION = 'LibraryManagementSystem.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 import pymysql
+
 pymysql.install_as_MySQLdb()
 DATABASES = {
     'default': {
